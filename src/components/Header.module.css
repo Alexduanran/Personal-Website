@@ -6,3 +6,7 @@
     z-index: 10000;
     overflow: hidden;
 }
+
+.name {
+    color: white
+}
