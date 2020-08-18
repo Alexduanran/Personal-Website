@@ -1,0 +1,8 @@
+.container {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: cornflowerblue;
+    z-index: 10000;
+    overflow: hidden;
+}
