@@ -11,32 +11,6 @@ function App() {
       <div>
         <Header />
       </div>
-      {/* <div className={css.main}>
-        <span className={css.about}>
-          <Link
-              activeClass={css.active}
-              to='about'
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}>
-              About
-          </Link>
-        </span>
-        <About />
-        <span className={css.projects}>
-          <Link
-              activeClass={css.active}
-              to='projects'
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}>
-              Projects
-          </Link>
-        </span>
-        <Projects />
-      </div> */}
     </div>
   );
 }

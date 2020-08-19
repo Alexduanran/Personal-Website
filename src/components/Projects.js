@@ -5,9 +5,9 @@ import { Link } from 'react-scroll';
 function Projects() {
     return (
         <div>
-                <div className={css.projects} id='projects'>
+            <div className={css.projects} id='projects'>
 
-                </div>
+            </div>
         </div>
     );
 }

@@ -11,27 +11,3 @@
     grid-auto-flow: row;
 }
 
-.about {
-    position: sticky;
-    top: 140px;
-    align-self: flex-start;
-    grid-row: 1;
-}
-
-.about > .active {
-    font-size: xx-large;
-    border-bottom: 1px solid black;
-}
-
-.projects {
-    position: sticky;
-    top: 190px;
-    align-self: flex-start;
-    grid-row: 2;
-}
-
-.projects > .active {
-    font-size: xx-large;
-    border-bottom: 1px solid black;
-}
-

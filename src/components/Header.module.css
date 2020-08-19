@@ -10,3 +10,21 @@
 .name {
     color: white
 }
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar li {
+    width: 100px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.banner {
+    background-color: darkorchid;
+    text-align: center;
+}

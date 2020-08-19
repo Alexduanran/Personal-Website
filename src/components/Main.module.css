@@ -4,6 +4,8 @@
     grid-gap: 10px;
     padding: 10px;
     grid-auto-flow: row;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .about {
@@ -11,22 +13,42 @@
     top: 140px;
     align-self: flex-start;
     grid-row: 1;
+    font-size: x-large;
 }
 
 .about > .active {
-    font-size: xx-large;
-    border-bottom: 1px solid black;
+    animation: enlarge 0.20s forwards;
 }
 
-.projects {
+.publications {
     position: sticky;
     top: 190px;
     align-self: flex-start;
     grid-row: 2;
+    font-size: x-large;
+}
+
+.publications > .active {
+    animation: enlarge 0.20s forwards;
+}
+
+.projects {
+    position: sticky;
+    top: 240px;
+    align-self: flex-start;
+    grid-row: 3;
+    font-size: x-large;
 }
 
 .projects > .active {
-    font-size: xx-large;
-    border-bottom: 1px solid black;
+    animation: enlarge 0.20s forwards;
 }
 
+@keyframes enlarge {
+    from {
+        font-size: x-large;
+    }
+    to {
+        font-size: xx-large;
+    }
+}

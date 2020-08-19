@@ -1,19 +1,7 @@
-.title {
-    position: sticky;
-    top: 140px;
-    align-self: flex-start;
-    grid-row: 1;
-}
-
 .about {
     height: 1000px;
     background-color: aqua;
-}
-
-.title > .active {
-    font-size: xx-large;
-    border-bottom: 1px solid black;
-}
+}   
 
 .row{
 	display: flex;
