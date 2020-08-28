@@ -52,3 +52,7 @@
         font-size: xx-large;
     }
 }
+
+.main > span {
+    font-family: 'Alata', sans-serif;
+}

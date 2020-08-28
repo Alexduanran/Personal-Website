@@ -4,14 +4,6 @@ import Main from './Main';
 import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
 import { Link } from 'react-scroll';
  
-// function Header() {
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// }
-
 class Header extends React.Component {
 
     constructor(props) {
@@ -97,49 +89,7 @@ class Header extends React.Component {
                                     Projects
                                 </Link>
                             </li>
-                            
                         </ul>
-                        {/* <ParallaxBanner
-                            className={css.banner}
-                            layers={[
-                                {
-                                    children: <Link
-                                        activeClass={css.active}
-                                        to='about'
-                                        spy={true}
-                                        smooth={true}
-                                        offset={0}
-                                        duration={500}>
-                                        About
-                                    </Link>,
-                                    amount: -0.1
-                                },
-                                {
-                                    children: <Link
-                                        activeClass={css.active}
-                                        to='publications'
-                                        spy={true}
-                                        smooth={true}
-                                        offset={0}
-                                        duration={500}>
-                                        Publications
-                                    </Link>,
-                                    amount: 0.2
-                                },
-                                {
-                                    children: <Link
-                                        activeClass={css.active}
-                                        to='projects'
-                                        spy={true}
-                                        smooth={true}
-                                        offset={0}
-                                        duration={500}>
-                                        Projects
-                                    </Link>,
-                                    amount: 0.5
-                                },
-                            ]}>
-                        </ParallaxBanner> */}
                     </ParallaxProvider>
                 </div>
                 &nbsp;
