@@ -16,7 +16,7 @@ function handleSetInactive() {
     return (
         <div className={css.main} style={{'margin-top': window.innerHeight}}>
             <span className={css.about}>
-                <Link
+                <Link style={{backgroundColor: 'white'}}
                     activeClass={css.active}
                     to='about'
                     spy={true}
@@ -28,7 +28,7 @@ function handleSetInactive() {
             </span>
             <About />
             <span className={css.publications}>
-                <Link
+                <Link style={{backgroundColor: 'white'}}
                     activeClass={css.active}
                     to='publications'
                     spy={true}
@@ -41,7 +41,7 @@ function handleSetInactive() {
             </span>
             <Publications />
             <span className={css.research}>
-                <Link
+                <Link style={{backgroundColor: 'white'}}
                     activeClass={css.active}
                     to='research'
                     spy={true}
@@ -51,10 +51,21 @@ function handleSetInactive() {
                     handleSetInactive={handleSetInactive}>
                     Research
                 </Link>
+                <div className={css.researchList}>
+                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
+                        activeClass={css.active}
+                        to='carml'
+                        spy={true}
+                        smooth={true}
+                        offset={-props.height}
+                        duration={500}>
+                        CarML
+                    </Link>
+                </div>
             </span>
             <Research />
             <span className={css.projects}>
-                <Link
+                <Link style={{backgroundColor: 'white'}}
                     activeClass={css.active}
                     to='projects'
                     spy={true}
@@ -63,6 +74,44 @@ function handleSetInactive() {
                     duration={500}>
                     Projects
                 </Link>
+                <div className={css.projectsList}>
+                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
+                        activeClass={css.active}
+                        to='savetreesteam'
+                        spy={true}
+                        smooth={true}
+                        offset={-props.height}
+                        duration={500}>
+                        The SaveTrees Team
+                    </Link>
+                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
+                        activeClass={css.active}
+                        to='atm'
+                        spy={true}
+                        smooth={true}
+                        offset={-props.height}
+                        duration={500}>
+                        ATM
+                    </Link>
+                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
+                        activeClass={css.active}
+                        to='dijkstrasarena'
+                        spy={true}
+                        smooth={true}
+                        offset={-props.height}
+                        duration={500}>
+                        Dijkstra's Arena
+                    </Link>
+                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
+                        activeClass={css.active}
+                        to='eagleexchange'
+                        spy={true}
+                        smooth={true}
+                        offset={-props.height}
+                        duration={500}>
+                        Eagle Exchange
+                    </Link>
+                </div>
             </span>
             <Projects />
         </div>

@@ -44,6 +44,15 @@
     animation: enlarge 0.20s forwards;
 }
 
+.researchList {
+    display: none;
+    margin-left: 10%;
+}
+
+.research > .active ~ .researchList {
+    display: block;
+}
+
 .projects {
     position: sticky;
     top: 290px;
@@ -54,6 +63,15 @@
 
 .projects > .active {
     animation: enlarge 0.20s forwards;
+}
+
+.projectsList {
+    display: none;
+    margin-left: 10%;
+}
+
+.projects > .active ~ .projectsList {
+    display: block;
 }
 
 @keyframes enlarge {
