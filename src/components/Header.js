@@ -78,6 +78,19 @@ class Header extends React.Component {
                                 </Link>
                             </li>
                             <li style={{
+                                    marginTop: 15000 * (1 - this.state.height / window.innerHeight),
+                                    marginLeft: 60000 * (1 - this.state.height / window.innerHeight)}}>
+                                <Link
+                                    activeClass={css.active}
+                                    to='research'
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}>
+                                    Research
+                                </Link>
+                            </li>
+                            <li style={{
                                     marginLeft: 30000 * (1 - this.state.height / window.innerHeight)}}>
                                 <Link
                                     activeClass={css.active}

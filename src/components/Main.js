@@ -3,6 +3,7 @@ import css from './Main.module.css';
 import { Link } from 'react-scroll';
 import About from './About';
 import Publications from './Publications';
+import Research from './Research';
 import Projects from './Projects';
 
 function Main(props) {
@@ -20,7 +21,7 @@ function handleSetInactive() {
                     to='about'
                     spy={true}
                     smooth={true}
-                    offset={-props.height-50}
+                    offset={-props.height-40}
                     duration={500}>
                     About
                 </Link>
@@ -39,6 +40,19 @@ function handleSetInactive() {
                 </Link>
             </span>
             <Publications />
+            <span className={css.research}>
+                <Link
+                    activeClass={css.active}
+                    to='research'
+                    spy={true}
+                    smooth={true}
+                    offset={-props.height}
+                    duration={500}
+                    handleSetInactive={handleSetInactive}>
+                    Research
+                </Link>
+            </span>
+            <Research />
             <span className={css.projects}>
                 <Link
                     activeClass={css.active}

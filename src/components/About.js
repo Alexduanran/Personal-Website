@@ -4,7 +4,7 @@ import profile_photo from '../media/profile_photo.JPG'
 
 function About() {
     return (
-        <div >
+        <div id='about'>
             <div className={css.row}>
                 <div className={css.colOne}></div>
                 <div className={css.colFive}>

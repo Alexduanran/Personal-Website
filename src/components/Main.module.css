@@ -32,11 +32,23 @@
     animation: enlarge 0.20s forwards;
 }
 
-.projects {
+.research {
     position: sticky;
     top: 240px;
     align-self: flex-start;
     grid-row: 3;
+    font-size: x-large;
+}
+
+.research > .active {
+    animation: enlarge 0.20s forwards;
+}
+
+.projects {
+    position: sticky;
+    top: 290px;
+    align-self: flex-start;
+    grid-row: 4;
     font-size: x-large;
 }
 
