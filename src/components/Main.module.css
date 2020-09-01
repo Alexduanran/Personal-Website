@@ -10,7 +10,7 @@
 
 .about {
     position: sticky;
-    top: 140px;
+    top: 160px;
     align-self: flex-start;
     grid-row: 1;
     font-size: x-large;
@@ -22,7 +22,7 @@
 
 .publications {
     position: sticky;
-    top: 190px;
+    top: 220px;
     align-self: flex-start;
     grid-row: 2;
     font-size: x-large;
@@ -47,7 +47,7 @@
 
 .research {
     position: sticky;
-    top: 240px;
+    top: 280px;
     align-self: flex-start;
     grid-row: 3;
     font-size: x-large;
@@ -72,7 +72,7 @@
 
 .projects {
     position: sticky;
-    top: 290px;
+    top: 340px;
     align-self: flex-start;
     grid-row: 4;
     font-size: x-large;
@@ -112,7 +112,7 @@
         font-size: x-large;
     }
     to {
-        font-size: xx-large;
+        font-size: 36px;
     }
 }
 

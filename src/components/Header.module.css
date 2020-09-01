@@ -7,6 +7,16 @@
     overflow: hidden;
 }
 
+.buttonGroup {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
 .name {
     color: white
 }

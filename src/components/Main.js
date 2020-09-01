@@ -16,7 +16,7 @@ function handleSetInactive() {
     return (
         <div className={css.main} style={{'margin-top': window.innerHeight}}>
             <span className={css.about}>
-                <Link style={{backgroundColor: 'white'}}
+                <Link style={{display:'block', backgroundColor: 'white'}}
                     activeClass={css.active}
                     to='about'
                     spy={true}
@@ -28,12 +28,12 @@ function handleSetInactive() {
             </span>
             <About />
             <span className={css.publications}>
-                <Link style={{backgroundColor: 'white'}}
+                <Link style={{display:'block', backgroundColor: 'white'}}
                     activeClass={css.active}
                     to='publications'
                     spy={true}
                     smooth={true}
-                    offset={-props.height}
+                    offset={-props.height-10}
                     duration={500}
                     handleSetInactive={handleSetInactive}>
                     Publications
@@ -45,7 +45,7 @@ function handleSetInactive() {
                             to='conferences'
                             spy={true}
                             smooth={true}
-                            offset={-props.height}
+                            offset={-props.height-10}
                             duration={500}>
                             Conferences
                         </Link>
@@ -54,12 +54,12 @@ function handleSetInactive() {
             </span>
             <Publications />
             <span className={css.research}>
-                <Link style={{backgroundColor: 'white'}}
+                <Link style={{display:'block', backgroundColor: 'white'}}
                     activeClass={css.active}
                     to='research'
                     spy={true}
                     smooth={true}
-                    offset={-props.height}
+                    offset={-props.height-10}
                     duration={500}
                     handleSetInactive={handleSetInactive}>
                     Research
@@ -71,7 +71,7 @@ function handleSetInactive() {
                             to='carml'
                             spy={true}
                             smooth={true}
-                            offset={-props.height}
+                            offset={-props.height-10}
                             duration={500}>
                             CarML
                         </Link>
@@ -80,12 +80,12 @@ function handleSetInactive() {
             </span>
             <Research />
             <span className={css.projects}>
-                <Link style={{backgroundColor: 'white'}}
+                <Link style={{display:'block', backgroundColor: 'white'}}
                     activeClass={css.active}
                     to='projects'
                     spy={true}
                     smooth={true}
-                    offset={-props.height}
+                    offset={-props.height-10}
                     duration={500}>
                     Projects
                 </Link>
@@ -96,7 +96,7 @@ function handleSetInactive() {
                             to='savetreesteam'
                             spy={true}
                             smooth={true}
-                            offset={-props.height}
+                            offset={-props.height-10}
                             duration={500}>
                             The SaveTrees Team
                         </Link>
@@ -107,7 +107,7 @@ function handleSetInactive() {
                             to='atm'
                             spy={true}
                             smooth={true}
-                            offset={-props.height}
+                            offset={-props.height-10}
                             duration={500}>
                             ATM
                         </Link>
@@ -118,7 +118,7 @@ function handleSetInactive() {
                             to='dijkstrasarena'
                             spy={true}
                             smooth={true}
-                            offset={-props.height}
+                            offset={-props.height-10}
                             duration={500}>
                             Dijkstra's Arena
                         </Link>
@@ -129,7 +129,7 @@ function handleSetInactive() {
                             to='eagleexchange'
                             spy={true}
                             smooth={true}
-                            offset={-props.height}
+                            offset={-props.height-10}
                             duration={500}>
                             Eagle Exchange
                         </Link>

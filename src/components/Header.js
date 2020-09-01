@@ -2,6 +2,10 @@ import React from 'react';
 import css from './Header.module.css';
 import Main from './Main';
 import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import IconButton from '@material-ui/core/IconButton';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
 import { Link } from 'react-scroll';
  
 class Header extends React.Component {
@@ -103,6 +107,17 @@ class Header extends React.Component {
                                 </Link>
                             </li>
                         </ul>
+                        <div className={css.buttonGroup}>
+                            <IconButton aria-label='email' href='mailto: duab@bc.edu'>
+                                <EmailIcon />
+                            </IconButton>
+                            <IconButton aria-label='linkedin' href='https://www.linkedin.com/in/alex-du-047188168/' target="_blank">
+                                <LinkedInIcon />
+                            </IconButton>
+                            <IconButton aria-label='github' href='https://github.com/Alexduanran' target="_blank">
+                                <GitHubIcon />
+                            </IconButton>
+                        </div>
                     </ParallaxProvider>
                 </div>
                 &nbsp;
