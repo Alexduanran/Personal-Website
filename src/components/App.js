@@ -11,6 +11,7 @@ function App() {
       <div>
         <Header />
       </div>
+      <footer style={{textAlign: 'center'}}>© 2020 Anran Du</footer>
     </div>
   );
 }

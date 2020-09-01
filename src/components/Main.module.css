@@ -74,6 +74,22 @@
     display: block;
 }
 
+.savetrees > .active {
+    border-bottom: 1px solid #333;
+}
+
+.atm > .active {
+    border-bottom: 1px solid #333;
+}
+
+.dijkstra > .active {
+    border-bottom: 1px solid #333;
+}
+
+.eagle > .active {
+    border-bottom: 1px solid #333;
+}
+
 @keyframes enlarge {
     from {
         font-size: x-large;

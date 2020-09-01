@@ -75,42 +75,50 @@ function handleSetInactive() {
                     Projects
                 </Link>
                 <div className={css.projectsList}>
-                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
-                        activeClass={css.active}
-                        to='savetreesteam'
-                        spy={true}
-                        smooth={true}
-                        offset={-props.height}
-                        duration={500}>
-                        The SaveTrees Team
-                    </Link>
-                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
-                        activeClass={css.active}
-                        to='atm'
-                        spy={true}
-                        smooth={true}
-                        offset={-props.height}
-                        duration={500}>
-                        ATM
-                    </Link>
-                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
-                        activeClass={css.active}
-                        to='dijkstrasarena'
-                        spy={true}
-                        smooth={true}
-                        offset={-props.height}
-                        duration={500}>
-                        Dijkstra's Arena
-                    </Link>
-                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
-                        activeClass={css.active}
-                        to='eagleexchange'
-                        spy={true}
-                        smooth={true}
-                        offset={-props.height}
-                        duration={500}>
-                        Eagle Exchange
-                    </Link>
+                    <div className={css.savetrees}>
+                        <Link style={{fontSize:'12pt', marginTop: '8pt'}}
+                            activeClass={css.active}
+                            to='savetreesteam'
+                            spy={true}
+                            smooth={true}
+                            offset={-props.height}
+                            duration={500}>
+                            The SaveTrees Team
+                        </Link>
+                    </div>
+                    <div className={css.atm}>
+                        <Link style={{fontSize:'12pt', marginTop: '8pt'}}
+                            activeClass={css.active}
+                            to='atm'
+                            spy={true}
+                            smooth={true}
+                            offset={-props.height}
+                            duration={500}>
+                            ATM
+                        </Link>
+                    </div>
+                    <div className={css.dijkstra}>
+                        <Link style={{fontSize:'12pt', marginTop: '8pt'}}
+                            activeClass={css.active}
+                            to='dijkstrasarena'
+                            spy={true}
+                            smooth={true}
+                            offset={-props.height}
+                            duration={500}>
+                            Dijkstra's Arena
+                        </Link>
+                    </div>
+                    <div className={css.eagle}>
+                        <Link style={{fontSize:'12pt', marginTop: '8pt'}}
+                            activeClass={css.active}
+                            to='eagleexchange'
+                            spy={true}
+                            smooth={true}
+                            offset={-props.height}
+                            duration={500}>
+                            Eagle Exchange
+                        </Link>
+                    </div>
                 </div>
             </span>
             <Projects />
