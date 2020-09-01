@@ -32,6 +32,19 @@
     animation: enlarge 0.20s forwards;
 }
 
+.publicationList {
+    display: none;
+    margin-left: 10%;
+}
+
+.publications > .active ~ .publicationList {
+    display: block;
+}
+
+.conferences > .active {
+    border-bottom: 1px solid #333;
+}
+
 .research {
     position: sticky;
     top: 240px;
@@ -51,6 +64,10 @@
 
 .research > .active ~ .researchList {
     display: block;
+}
+
+.carml > .active {
+    border-bottom: 1px solid #333;
 }
 
 .projects {

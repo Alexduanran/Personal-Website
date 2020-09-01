@@ -38,6 +38,19 @@ function handleSetInactive() {
                     handleSetInactive={handleSetInactive}>
                     Publications
                 </Link>
+                <div className={css.publicationList}>
+                    <div className={css.conferences}>
+                        <Link style={{fontSize:'12pt', marginTop: '8pt'}}
+                            activeClass={css.active}
+                            to='conferences'
+                            spy={true}
+                            smooth={true}
+                            offset={-props.height}
+                            duration={500}>
+                            Conferences
+                        </Link>
+                    </div>
+                </div>
             </span>
             <Publications />
             <span className={css.research}>
@@ -52,15 +65,17 @@ function handleSetInactive() {
                     Research
                 </Link>
                 <div className={css.researchList}>
-                    <Link style={{display:'block', fontSize:'12pt', marginTop: '8pt'}}
-                        activeClass={css.active}
-                        to='carml'
-                        spy={true}
-                        smooth={true}
-                        offset={-props.height}
-                        duration={500}>
-                        CarML
-                    </Link>
+                    <div className={css.carml}>
+                        <Link style={{fontSize:'12pt', marginTop: '8pt'}}
+                            activeClass={css.active}
+                            to='carml'
+                            spy={true}
+                            smooth={true}
+                            offset={-props.height}
+                            duration={500}>
+                            CarML
+                        </Link>
+                    </div>
                 </div>
             </span>
             <Research />
