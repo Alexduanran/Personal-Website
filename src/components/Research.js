@@ -20,7 +20,7 @@ function Research() {
                     <p>
                     Paper is selected to appear in ACM MobiCom 2020.
                     </p>
-                    <IconButton aria-label='github' href='https://github.com/Alexduanran/Group-8---ATM' target="_blank">
+                    <IconButton aria-label='github' href='https://github.com/YichengShen/CarML-Simulator' target="_blank">
                         <GitHubIcon />
                     </IconButton>
                 </div>
