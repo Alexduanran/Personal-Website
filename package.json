@@ -18,7 +18,9 @@
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
     "react-scroll-parallax": "^2.3.4",
-    "save-dev": "0.0.1-security"
+    "save-dev": "0.0.1-security",
+    "three": "^0.120.1",
+    "vanta": "^0.5.19"
   },
   "scripts": {
     "start": "react-scripts start",

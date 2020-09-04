@@ -2,7 +2,7 @@
     display: block;
     position: fixed;
     width: 100%;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     z-index: 10000;
     overflow: hidden;
 }
@@ -10,7 +10,7 @@
 .buttonGroup {
     position: absolute;
     right: 5%;
-    top: 5%;
+    top: 50px;
 }
 
 .rotate {
@@ -18,23 +18,28 @@
 }
 
 .name {
-    color: white
+    color: white;
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.navbar li {
+    font-family: 'Alatsi', sans-serif;
+    color: white;
+    font-size: 130%;
+    text-align: center;
+    margin: auto auto;
 }
 
 .navbar {
     display: flex;
     list-style-type: none;
-    width: 100%;
+    width: 30%;
+    margin: auto;
     justify-content: center;
 }
 
 .navbar li {
     width: 100px;
     padding-top: 10px;
-    text-align: center;
-}
-
-.banner {
-    background-color: darkorchid;
     text-align: center;
 }

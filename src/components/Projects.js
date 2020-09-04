@@ -125,14 +125,15 @@ function Projects() {
                             <GitHubIcon />
                         </IconButton>
                     </div>
-                    <div className={css.colOne}></div>
-                    <div className={css.colFive}>
+                    <div className={css.colTwo}></div>
+                    <div className={css.colTwo}>
                         <Carousel  showThumbs={false} showStatus={false}>
                             <img src={eagle1} style={{objectFit: 'cover'}}/>
                             <img src={eagle2} style={{objectFit: 'cover'}}/>
                             <img src={eagle3} style={{objectFit: 'cover'}}/>
                         </Carousel>
                     </div>
+                    <div className={css.colTwo}></div>
                 </div>
             </div>
         </div>

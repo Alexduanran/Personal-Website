@@ -8,9 +8,13 @@
     margin: 0 auto;
 }
 
+.projectsList div {
+    margin-bottom: 10%;
+}
+
 .about {
     position: sticky;
-    top: 160px;
+    top: 180px;
     align-self: flex-start;
     grid-row: 1;
     font-size: x-large;
@@ -22,7 +26,7 @@
 
 .publications {
     position: sticky;
-    top: 220px;
+    top: 243px;
     align-self: flex-start;
     grid-row: 2;
     font-size: x-large;
@@ -47,7 +51,7 @@
 
 .research {
     position: sticky;
-    top: 280px;
+    top: 306px;
     align-self: flex-start;
     grid-row: 3;
     font-size: x-large;
@@ -72,7 +76,7 @@
 
 .projects {
     position: sticky;
-    top: 340px;
+    top: 369px;
     align-self: flex-start;
     grid-row: 4;
     font-size: x-large;
@@ -110,9 +114,11 @@
 @keyframes enlarge {
     from {
         font-size: x-large;
+        color: black;
     }
     to {
         font-size: 36px;
+        color: #2196F3;
     }
 }
 

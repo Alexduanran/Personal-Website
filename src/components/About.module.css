@@ -1,6 +1,7 @@
-/* .about {
-    height: 1000px;
-}    */
+.intro {
+    font-size: 120%;
+    margin: 20% auto;
+}
 
 .row{
 	display: flex;
