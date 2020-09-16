@@ -17,7 +17,10 @@ function Publications() {
                     <Button variant="contained" href='https://mobicom20posters.hotcrp.com/doc/mobicom20posters-final89.pdf?cap=089afLXmYaQ9qbI' target="_blank" style={{marginTop: '15px'}}>
                             Paper
                     </Button>
-                    
+                    &nbsp; &nbsp; &nbsp;
+                    <Button variant="contained" href='https://drive.google.com/file/d/1siEUlGPFtHG8_wp9YYFDCJrb4APrqfJp/view' target="_blank" style={{marginTop: '15px'}}>
+                            Video
+                    </Button>
                 </div>
             </div>
         </div>
