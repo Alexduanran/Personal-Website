@@ -1,4 +1,7 @@
 {
+    "about": {
+        "photo": "./media/profile_photo.JPG"
+    },
     "publications": [
         {
             "title": "Poster: CarML: Distributed Machine Learning in Vehicular Clouds",
