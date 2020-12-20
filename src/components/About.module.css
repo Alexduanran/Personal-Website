@@ -1,10 +1,29 @@
-.intro {
-    font-size: 120%;
-    margin: 20% auto;
+#about {
+    
 }
 
-.row{
-	display: flex;
+.intro {
+    font-size: 120%;
+    max-width: 25vw;
+    min-width: 23vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.photo {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px #888888;
+    width: 15vw;
+    min-width: 250px;
+    height: 15vw;
+    min-height: 250px;
 }
 
 @media only screen and (min-width: 768px){

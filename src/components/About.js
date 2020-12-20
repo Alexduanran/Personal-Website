@@ -1,19 +1,13 @@
 import React from 'react';
-import css from './About.module.css'
-import profile_photo from '../media/profile_photo.JPG'
+import css from './About.module.css';
+import Media from 'react-bootstrap/Media';
 
 function About() {
     return (
-        <div id='about' style={{marginBottom: '30px'}}>
-            <div className={css.row}>
-                <div className={css.colOne}></div>
-                <div className={css.colFive}>
-                    <img src={profile_photo} alt='Profile Photo' width='300px'></img>
-                </div>
-                <div className={css.colFive}>
-                    <p className={css.intro}> Hey guys! My name is Anran, but I also go by Alex. I am a student at Boston College, Class of 2021, majoring in Computer Science.</p>
-                </div>
-                <div className={css.colOne}></div>
+        <div id='about' style={{marginBottom: '5%'}}>
+            <div className={css.container}>
+                <img src={'./media/profile_photo.jpg'} alt='Profile Photo' className={css.photo}></img>
+                <p className={css.intro}> <strong>Hey guys!</strong> My name is Anran, but I also go by Alex. I am a student at Boston College, Class of 2021, majoring in Computer Science.</p>
             </div>
         </div>
     );

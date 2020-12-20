@@ -22,6 +22,11 @@
 
 .about > .active {
     animation: enlarge 0.20s forwards;
+    border: none;
+}
+
+.about > .inactive {
+    animation: shrink 0.20s forwards;
 }
 
 .publications {
@@ -34,24 +39,19 @@
 
 .publications > .active {
     animation: enlarge 0.20s forwards;
+    border: none;
+}
+
+.publications > .inactive {
+    animation: shrink 0.20s forwards;
 }
 
 .publicationList {
-    display: none;
     margin-left: 10%;
-}
-
-.publications > .active ~ .publicationList {
-    display: block;
-}
-
-.conferences > .active {
-    border-bottom: 1px solid #333;
 }
 
 .research {
     position: sticky;
-    top: 306px;
     align-self: flex-start;
     grid-row: 3;
     font-size: x-large;
@@ -59,24 +59,31 @@
 
 .research > .active {
     animation: enlarge 0.20s forwards;
+    border: none;
+}
+
+.research > .inactive {
+    animation: shrink 0.20s forwards;
+}
+
+.researchup {
+    animation: researchup 0.20s forwards;
+}
+
+.researchdown {
+    animation: researchdown 0.20s forwards;
 }
 
 .researchList {
-    display: none;
     margin-left: 10%;
 }
 
-.research > .active ~ .researchList {
-    display: block;
-}
-
-.carml > .active {
+.active {
     border-bottom: 1px solid #333;
 }
 
 .projects {
     position: sticky;
-    top: 369px;
     align-self: flex-start;
     grid-row: 4;
     font-size: x-large;
@@ -84,31 +91,25 @@
 
 .projects > .active {
     animation: enlarge 0.20s forwards;
+    border: none;
+}
+
+.projects > .inactive {
+    animation: shrink 0.20s forwards;
 }
 
 .projectsList {
-    display: none;
     margin-left: 10%;
 }
 
-.projects > .active ~ .projectsList {
+.subheader {
+    font-size: 12pt;
+    margin-top: 8pt;
+}
+
+.header {
     display: block;
-}
-
-.savetrees > .active {
-    border-bottom: 1px solid #333;
-}
-
-.atm > .active {
-    border-bottom: 1px solid #333;
-}
-
-.dijkstra > .active {
-    border-bottom: 1px solid #333;
-}
-
-.eagle > .active {
-    border-bottom: 1px solid #333;
+    background-color: white;
 }
 
 @keyframes enlarge {
@@ -119,6 +120,35 @@
     to {
         font-size: 36px;
         color: #2196F3;
+    }
+}
+
+@keyframes shrink {
+    from {
+        font-size: 36px;
+        color: #2196F3;
+    }
+    to {
+        font-size: x-large;
+        color: black;
+    }
+}
+
+@keyframes researchup {
+    from {
+        top: 336px;
+    }
+    to {
+        top: 306px;
+    }
+}
+
+@keyframes researchup {
+    from {
+        top: 306px;
+    }
+    to {
+        top: 336px;
     }
 }
 

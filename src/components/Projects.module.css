@@ -1,5 +1,6 @@
 .row{
 	display: flex;
+	flex-flow: row wrap;
 }
 
 @media only screen and (min-width: 768px){
@@ -15,4 +16,17 @@
 .colTen {flex-basis: 83.33%;}
 .colEleven {flex-basis: 91.66%;}
 .colTwelve {flex-basis: 100%;}
+}
+
+.image {
+	max-width: 24vw;
+	min-width: 300px;
+}
+
+.swiper {
+	max-width: 24vw;
+	min-width: 300px;
+	max-height: 24vw;
+	border-radius: 8%;
+	box-shadow: 5px 5px 10px #888888 ; 
 }
