@@ -1,0 +1,135 @@
+{
+    "publications": [
+        {
+            "title": "Poster: CarML: Distributed Machine Learning in Vehicular Clouds",
+            "id": "mobicom",
+            "authors": ", Yicheng Shen, and Lewis Tseng",
+            "conference": "MobiCom",
+            "conference_": "MobiCom 2020: The 26th Annual International Conference on Mobile Computing and Networking, September 2020",
+            "paper": "https://dl.acm.org/doi/10.1145/3372224.3418168",
+            "video": "https://drive.google.com/file/d/1siEUlGPFtHG8_wp9YYFDCJrb4APrqfJp/view"
+        }
+    ],
+    "research": [
+        {
+            "title": "VC-SGD",
+            "id": "vcsgd",
+            "time": "Nov 2020 - Present",
+            "descriptions": [
+                "The novel system, VC - SGD (Vehicular Clouds - Stochastic Gradient Descent) seamlessly integrates the emerging concept of vehicular clouds with an edge-based FL (Federated Learning)."
+            ],
+            "github": "https://github.com/YichengShen/CarML-VC"
+        },
+        {
+            "title": "CRACAU",
+            "id": "cracau",
+            "time": "Sep 2020 - Present",
+            "descriptions": [
+                "A novel, Byzantine-tolerant federated learning algorithm designed for the popular three-level edge computing architecture."
+                
+            ],
+            "github": "https://github.com/YichengShen/CRACAU"
+        },
+        {
+            "title": "CarML",
+            "id": "carml",
+            "time": "May 2020 - Sep 2020",
+            "descriptions": [
+                "Implemented CarML, a distributed machine learning platform built on top of vehicular clouds that utilized vehicles as workers in distributed training.",
+                "Built a vehicular distributed training simulator using Python, TensorFlow, and SUMO to test the performance and efficacy of our proposed platform running in a city environment."
+            ],
+            "github": "https://github.com/YichengShen/CarML-Simulator"
+        }
+    ],
+    "projects": [
+        {
+            "title": "AlphaGame",
+            "id": "alphagame",
+            "time": "Fall 2020",
+            "descriptions": [
+                "Implemented AIs to play Snake, Pong, and Flappy Bird using reinforcement learning and genetic algorithm using Python and TensorFlow.",
+                "Built a web-page incorporating visualization and user interaction using JavaScript, React.js, and p5."
+            ],
+            "website": "https://alexduanran.github.io/AlphaGame/",
+            "github": "https://github.com/Alexduanran/AlphaGame",
+            "images": [
+                "./media/alpha1.png",
+                "./media/alpha2.png",
+                "./media/alpha3.png"
+            ] 
+        },
+        {
+            "title": "CarSpeech",
+            "id": "carspeech",
+            "time": "Fall 2020",
+            "descriptions": [
+                "Built convolutional nerual netowork models to recognize human speech in a noisy car environment using the AVICAR dataset and TensorFlow."
+            ],
+            "website": "https://yichengshen.github.io/car_speech/",
+            "github": "https://github.com/YichengShen/car_speech",
+            "images": [
+                "./media/carspeech1.png",
+                "./media/carspeech2.png"
+            ] 
+        },
+        {
+            "title": "The SavesTrees Team",
+            "id": "savetreesteam",
+            "time": "Spring 2020",
+            "descriptions": [
+                "Created a proof-of-concept website keeping track of paper usage on college campuses to encourage students and professors to be more environmentally friendly using React.js, React Router, and Google Firestore."
+            ],
+            "website": "https://bcwebcourse.github.io/creative-project-the-savetrees-team/",
+            "github": "https://github.com/bcwebcourse/creative-project-the-savetrees-team",
+            "images": [
+                "./media/savetrees1.png",
+                "./media/savetrees2.png",
+                "./media/savetrees3.png",
+                "./media/savetrees4.png"
+            ] 
+        },
+        {
+            "title": "ATM",
+            "id": "atm",
+            "time": "Spring 2020",
+            "descriptions": [
+                "Developed a web page predicting stock trend based on deep learning using Python, React.js front-end, vis.js, and Flask back-end."
+            ],
+            "github": "https://github.com/Alexduanran/Eagle-Exchange",
+            "images": [
+                "./media/atm1.png",
+                "./media/atm2.png",
+                "./media/atm3.png"            ] 
+        },
+        {
+            "title": "Dijkstra's Arena",
+            "id": "dijkstrasarena",
+            "time": "Fall 2019",
+            "descriptions": [
+                "Worked on a web-based game designed to educate students on Dijkstra’s shortest path algorithm using JavaScript and React.js.",
+                "Implemented visualization for traversed paths and debugged the adaptation of Dijkstra’s algorithm."
+            ],
+            "website": "http://dijkstras-arena.herokuapp.com/",
+            "github": "https://github.com/rogerwangcs/Dijkstras-Arena",
+            "images": [
+                "./media/dijkstra1.png",
+                "./media/dijkstra2.png"
+            ] 
+        },
+        {
+            "title": "Eagle Exchange",
+            "id": "eagleexchange",
+            "time": "Fall 2018",
+            "descriptions": [
+                "Designed an iOS app serving as a platform for online goods exchange among students at Boston College using Swift and Google Firestore."
+            ],
+            "github": "https://github.com/Alexduanran/Eagle-Exchange",
+            "images": [
+                "./media/eagle1.png",
+                "./media/eagle2.png",
+                "./media/eagle3.png"
+            ],
+            "vertical": "true"
+        }
+    ]
+}
