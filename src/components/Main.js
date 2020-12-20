@@ -40,7 +40,7 @@ function Main(props) {
                     About
                 </Link>
             </span>
-            <About />
+            <About data={props.data.about}/>
 
             <span className={css.publications}>
                 <Link className={css.header}
