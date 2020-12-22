@@ -46,59 +46,50 @@ function Header() {
         <div>
             <div ref={myRef} className={css.container} style={{height: height}}>
                 <div className={css.name} 
-                    style={{fontSize: height * 0.09 + 30,
+                    style={{fontSize: height * 0.09 + 35,
                         marginLeft: -window.innerWidth * (1 - height / window.innerHeight) * 0.9,
-                        marginTop: height * 0.3,
+                        marginTop: height * 0.26,
                         textAlign: 'center'
                         }}>
                     Anran Du
                 </div>
                 <ul className={css.navbar}>
-                    <li style={{
-                            marginLeft: -10000 * (1 - height / window.innerHeight)}}>
+                    <li>
                         <Link
-                            activeClass={css.active}
                             to='about'
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-window.innerHeight*0.21}
                             duration={500}>
                             About
                         </Link>
                     </li>
-                    <li style={{
-                            marginTop: 10000 * (1 - height / window.innerHeight)}}>
+                    <li>
                         <Link
-                            activeClass={css.active}
                             to='publications'
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-window.innerHeight*0.21}
                             duration={500}>
                             Publications
                         </Link>
                     </li>
-                    <li style={{
-                            marginTop: 15000 * (1 - height / window.innerHeight),
-                            marginLeft: 60000 * (1 - height / window.innerHeight)}}>
+                    <li>
                         <Link
-                            activeClass={css.active}
                             to='research'
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-window.innerHeight*0.21}
                             duration={500}>
                             Research
                         </Link>
                     </li>
-                    <li style={{
-                            marginLeft: 30000 * (1 - height / window.innerHeight)}}>
+                    <li>
                         <Link
-                            activeClass={css.active}
                             to='projects'
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-window.innerHeight*0.21}
                             duration={500}>
                             Projects
                         </Link>

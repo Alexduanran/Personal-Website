@@ -28,12 +28,12 @@ function Main(props) {
     return (
         <div className={css.main} style={{'margin-top': window.innerHeight}}>
             <span className={css.about}>
-                <Link className={css.header}
-                    className={aboutActive ? css.active : css.inactive}
+                <Link 
+                    className={aboutActive ? css.activeMain : css.inactive}
                     to='about'
                     spy={true}
                     smooth={true}
-                    offset={-window.innerHeight*0.16}
+                    offset={-window.innerHeight*0.21}
                     duration={500}
                     onSetActive={()=>setAboutActive(true)}
                     onSetInactive={()=>setAboutActive(false)}>
@@ -43,12 +43,12 @@ function Main(props) {
             <About data={props.data.about}/>
 
             <span className={css.publications}>
-                <Link className={css.header}
-                    className={publicationsActive ? css.active : css.inactive}
+                <Link
+                    className={publicationsActive ? css.activeMain : css.inactive}
                     to='publications'
                     spy={true}
                     smooth={true}
-                    offset={-window.innerHeight*0.16}
+                    offset={-window.innerHeight*0.21}
                     duration={500}
                     onSetActive={()=>setPublicationsActive(true)}
                     onSetInactive={()=>setPublicationsActive(false)}>
@@ -61,11 +61,11 @@ function Main(props) {
                             props.data.publications.map(d => (
                                 <div>
                                     <Link className={css.subheader}
-                                        activeClass={css.active}
+                                        activeClass={css.activeSub}
                                         to={d.id}
                                         spy={true}
                                         smooth={true}
-                                        offset={-window.innerHeight*0.16}
+                                        offset={-window.innerHeight*0.21}
                                         duration={500}>
                                         {d.conference}
                                     </Link>
@@ -80,12 +80,12 @@ function Main(props) {
             <Publications data={props.data.publications}/>
 
             <span className={css.research} style={{top: publicationsActive ? 341 : 306}}>
-                <Link className={css.header}
-                    className={researchActive ? css.active : css.inactive}
+                <Link 
+                    className={researchActive ? css.activeMain : css.inactive}
                     to='research'
                     spy={true}
                     smooth={true}
-                    offset={-window.innerHeight*0.16}
+                    offset={-window.innerHeight*0.21}
                     duration={500}
                     onSetActive={()=>setResearchActive(true)}
                     onSetInactive={()=>setResearchActive(false)}>
@@ -98,11 +98,11 @@ function Main(props) {
                             props.data.research.map(d => (
                                 <div>
                                     <Link className={css.subheader}
-                                        activeClass={css.active}
+                                        activeClass={css.activeSub}
                                         to={d.id}
                                         spy={true}
                                         smooth={true}
-                                        offset={-window.innerHeight*0.16}
+                                        offset={-window.innerHeight*0.21}
                                         duration={500}>
                                         {d.title}
                                     </Link>
@@ -117,12 +117,12 @@ function Main(props) {
             <Research data={props.data.research}/>
 
             <span className={css.projects} style={{top: researchActive ? 474 : 369}}>
-                <Link className={css.header}
-                    className={projectsActive ? css.active : css.inactive}
+                <Link 
+                    className={projectsActive ? css.activeMain : css.inactive}
                     to='projects'
                     spy={true}
                     smooth={true}
-                    offset={-window.innerHeight*0.16}
+                    offset={-window.innerHeight*0.21}
                     duration={500}
                     onSetActive={()=>setProjectsActive(true)}
                     onSetInactive={()=>setProjectsActive(false)}>
@@ -135,11 +135,11 @@ function Main(props) {
                             props.data.projects.map(d => (
                                 <div>
                                     <Link className={css.subheader}
-                                        activeClass={css.active}
+                                        activeClass={css.activeSub}
                                         to={d.id}
                                         spy={true}
                                         smooth={true}
-                                        offset={-window.innerHeight*0.16}
+                                        offset={-window.innerHeight*0.21}
                                         duration={500}>
                                         {d.title}
                                     </Link>

@@ -8,6 +8,24 @@
     margin: 0 auto;
 }
 
+.main a {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    background-image: linear-gradient(
+    	to right,
+	    dodgerblue,
+	    deepskyblue 50%,
+	    black 50%);
+	    background-size: 200% 100%;
+	    background-position: 100%;
+}
+
+span a:hover {
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    background-position: 0%;
+}
+
 .projectsList div {
     margin-bottom: 10%;
 }
@@ -20,26 +38,12 @@
     font-size: x-large;
 }
 
-.about > .active {
-    animation: enlarge 0.20s forwards;
-    border: none;
-}
-
-.about > .inactive {
-    animation: shrink 0.20s forwards;
-}
-
 .publications {
     position: sticky;
     top: 243px;
     align-self: flex-start;
     grid-row: 2;
     font-size: x-large;
-}
-
-.publications > .active {
-    animation: enlarge 0.20s forwards;
-    border: none;
 }
 
 .publications > .inactive {
@@ -57,15 +61,6 @@
     font-size: x-large;
 }
 
-.research > .active {
-    animation: enlarge 0.20s forwards;
-    border: none;
-}
-
-.research > .inactive {
-    animation: shrink 0.20s forwards;
-}
-
 .researchup {
     animation: researchup 0.20s forwards;
 }
@@ -78,8 +73,18 @@
     margin-left: 10%;
 }
 
-.active {
-    border-bottom: 1px solid #333;
+.activeMain {
+    animation: enlarge 0.20s forwards;
+}
+
+.activeSub {
+    border-left: 2px solid dodgerblue;
+    padding-left: 2px;
+    margin-left: -4px;
+}
+
+.inactive {
+    animation: shrink 0.20s forwards;
 }
 
 .projects {
@@ -87,15 +92,6 @@
     align-self: flex-start;
     grid-row: 4;
     font-size: x-large;
-}
-
-.projects > .active {
-    animation: enlarge 0.20s forwards;
-    border: none;
-}
-
-.projects > .inactive {
-    animation: shrink 0.20s forwards;
 }
 
 .projectsList {
@@ -107,48 +103,25 @@
     margin-top: 8pt;
 }
 
-.header {
-    display: block;
-    background-color: white;
-}
-
 @keyframes enlarge {
     from {
         font-size: x-large;
-        color: black;
+        /* color: black; */
     }
     to {
         font-size: 36px;
-        color: #2196F3;
+        transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+        background-position: 0%;
     }
 }
 
 @keyframes shrink {
     from {
         font-size: 36px;
-        color: #2196F3;
     }
     to {
         font-size: x-large;
         color: black;
-    }
-}
-
-@keyframes researchup {
-    from {
-        top: 336px;
-    }
-    to {
-        top: 306px;
-    }
-}
-
-@keyframes researchup {
-    from {
-        top: 306px;
-    }
-    to {
-        top: 336px;
     }
 }
 

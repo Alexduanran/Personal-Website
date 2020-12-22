@@ -2,7 +2,6 @@
     display: block;
     position: fixed;
     width: 100%;
-    /* background-color: cornflowerblue; */
     z-index: 10000;
     overflow: hidden;
 }
@@ -22,24 +21,29 @@
     font-family: 'Zilla Slab Highlight', cursive;
 }
 
+.navbar {
+    display: flex;
+    list-style-type: none;
+    width: 30vw;
+    min-width: 600px;
+    margin: auto;
+    padding-right: 1.5%;
+    justify-content: space-evenly;
+}
+
 .navbar li {
     font-family: 'Alatsi', sans-serif;
     color: white;
     font-size: 130%;
     text-align: center;
-    margin: auto auto;
+    cursor: pointer;
 }
 
-.navbar {
-    display: flex;
-    list-style-type: none;
-    width: 30%;
-    margin: auto;
-    justify-content: center;
-}
-
-.navbar li {
-    width: 100px;
-    padding-top: 10px;
-    text-align: center;
+.navbar a:hover {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    padding-left: 2px;
+    margin-left: -5px;
+    padding-right: 2px;
+    margin-right: -5px;
 }
