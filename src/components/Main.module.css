@@ -17,8 +17,9 @@
 	    dodgerblue,
 	    deepskyblue 50%,
 	    black 50%);
-	    background-size: 200% 100%;
-	    background-position: 100%;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
 }
 
 span a:hover {
@@ -46,10 +47,6 @@ span a:hover {
     font-size: x-large;
 }
 
-.publications > .inactive {
-    animation: shrink 0.20s forwards;
-}
-
 .publicationList {
     margin-left: 10%;
 }
@@ -75,6 +72,7 @@ span a:hover {
 
 .activeMain {
     animation: enlarge 0.20s forwards;
+    transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
 }
 
 .activeSub {
@@ -106,11 +104,10 @@ span a:hover {
 @keyframes enlarge {
     from {
         font-size: x-large;
-        /* color: black; */
     }
     to {
         font-size: 36px;
-        transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+        /* transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1); */
         background-position: 0%;
     }
 }
@@ -121,7 +118,6 @@ span a:hover {
     }
     to {
         font-size: x-large;
-        color: black;
     }
 }
 
