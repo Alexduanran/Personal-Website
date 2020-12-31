@@ -1,6 +1,7 @@
 {
     "about": {
-        "photo": "./media/profile_photo.JPG"
+        "photo": "./media/profile_photo.JPG",
+        "description": "My name is Anran, but I also go by Alex. I am a student at Boston College, Class of 2021, majoring in Computer Science. My research focuses on the application of machine learning and distributed computing."
     },
     "publications": [
         {

@@ -8,7 +8,7 @@ function About(props) {
                 props.data ?
                 <div className={css.container}>
                     <img src={props.data.photo} alt='Profile Photo' className={css.photo}></img>
-                    <p className={css.intro}> <strong>Hey guys!</strong> My name is Anran, but I also go by Alex. I am a student at Boston College, Class of 2021, majoring in Computer Science.</p>
+                    <p className={css.intro}> <strong>Hey guys!</strong> {props.data.description}</p>
                 </div>
                 :
                 <div/>

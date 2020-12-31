@@ -99,7 +99,7 @@ function Header() {
                     <IconButton aria-label='email' href='mailto: duab@bc.edu' style={{ color: 'white' }}>
                         <EmailIcon style={{ fontSize: 35 }} />
                     </IconButton>
-                    <IconButton aria-label='linkedin' href='https://www.linkedin.com/in/alex-du-047188168/' target="_blank" style={{ color: 'white' }}>
+                    <IconButton aria-label='linkedin' href='https://www.linkedin.com/in/anran-du-047188168/' target="_blank" style={{ color: 'white' }}>
                         <LinkedInIcon style={{ fontSize: 35 }} />
                     </IconButton>
                     <IconButton aria-label='github' href='https://github.com/Alexduanran' target="_blank" style={{ color: 'white' }}>
