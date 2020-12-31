@@ -36,11 +36,6 @@ function Header() {
             logoHeight = Math.max(minHeight, window.innerHeight - scrollTop);
         setHeight(logoHeight);
     }
-
-    const getRandomArbitrary = (min, max) => {
-        return Math.random() * (max - min) + min;
-    }
-
     
     return (
         <div>
@@ -53,7 +48,7 @@ function Header() {
                         }}>
                     Anran Du
                 </div>
-                <ul className={css.navbar}>
+                <ul className={css.navbar} style={{marginTop: (- 1 / window.innerHeight * 15000) * (1 - height / window.innerHeight)}}>
                     <li>
                         <Link
                             to='about'
