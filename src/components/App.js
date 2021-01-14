@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react';
 import css from './App.module.css';
 import Header from './Header';
 import Main from './Main';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-177413879-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 	const [data, setData] = useState([]);
 
-	let months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.']
+	const months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.']
 	var d = new Date();
 	var year = d.getFullYear();
 	var month = months[d.getMonth()]

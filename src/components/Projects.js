@@ -53,13 +53,13 @@ function Projects(props) {
                                         loop={true}
                                         navigation={true}
                                         style={d.vertical === 'true' ?
-                                        {minWidth: '11vw', width: '11vw', height: '23vw'} : {}}>
+                                        {minWidth: '34vw', width: '34vw', minHeight: '300px'} : {}}>
                                     {
                                         d.images.map(im => (
                                             <SwiperSlide>
                                                 <img src={im} className={css.image} 
                                                 style={d.vertical === 'true' ?
-                                                {minWidth: '11vw', width: '11vw', height: '23vw'} : {}}/>
+                                                {minWidth: '34vw', width: '34vw', minHeight: '300px'} : {}}/>
                                             </SwiperSlide>
                                         ))
                                     }

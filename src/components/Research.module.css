@@ -1,3 +1,13 @@
 .description {
     max-width: 50vw;
 }
+
+@media only screen and (max-width: 768px) {
+    .description {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 160%;
+    }
+}

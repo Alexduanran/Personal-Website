@@ -26,7 +26,27 @@
 .swiper {
 	max-width: 24vw;
 	min-width: 300px;
-	max-height: 24vw;
+	max-height: 400px;
 	border-radius: 8%;
 	box-shadow: 5px 5px 10px #888888 ; 
+}
+
+@media only screen and (max-width: 768px) {
+	.row {
+		margin-left: 5%;
+		margin-bottom: 20%;
+	}
+
+	.swiper {
+		margin-top: 5%;
+		max-width: vw;
+		min-width: 300px;
+		max-height: 200px;
+		border-radius: 8%;
+		box-shadow: 5px 5px 10px #888888 ; 
+	}
+
+	h2 {
+		font-size: 160%;
+	}
 }

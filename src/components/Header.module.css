@@ -44,19 +44,19 @@
 .navbar {
     display: flex;
     list-style-type: none;
-    width: 30vw;
+    width: 45%;
     min-width: 600px;
     margin: auto;
     padding-right: 40px;
-    justify-content: space-evenly;
+    text-align: center;
 }
 
-.navbar li {
+ul li {
     font-family: 'Alatsi', sans-serif;
     color: white;
     font-size: 130%;
-    text-align: center;
     cursor: pointer;
+    width: 100%;
 }
 
 .navbar a:hover {
@@ -95,5 +95,26 @@
     }
     to {
         opacity: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        list-style-type: none;
+        width: 45%;
+        min-width: 300px;
+        margin: auto;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    ul li {
+        font-family: 'Alatsi', sans-serif;
+        color: white;
+        font-size: 130%;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 5%;
     }
 }
