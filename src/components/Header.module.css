@@ -12,6 +12,26 @@
     top: 50px;
 }
 
+.downarrow {
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    right: 40%;
+    top: 85%;
+    color: white;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+.fadeout {
+    animation: fadeout 1s forwards;
+}
+
+.fadein {
+    animation: fadein 1s forwards;
+}
+
 .rotate {
     transform: rotate(90deg);
 }
@@ -46,4 +66,34 @@
     margin-left: -5px;
     padding-right: 2px;
     margin-right: -5px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }

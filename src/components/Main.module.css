@@ -78,7 +78,6 @@ span a:hover {
 .activeSub {
     border-left: 2px solid dodgerblue;
     padding-left: 2px;
-    margin-left: -4px;
 }
 
 .inactive {
@@ -107,7 +106,6 @@ span a:hover {
     }
     to {
         font-size: 36px;
-        /* transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1); */
         background-position: 0%;
     }
 }

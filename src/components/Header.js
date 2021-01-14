@@ -90,6 +90,21 @@ function Header() {
                         </Link>
                     </li>
                 </ul>
+                <div className={css.downarrow} key={'arrow'} style={{opacity: (height/window.innerHeight)**10,
+                                                                    pointerEvents: height === window.innerHeight ? '' : 'none'}}>
+                    <Link
+                        to='about'
+                        spy={true}
+                        smooth={true}
+                        offset={-window.innerHeight*0.21}
+                        duration={500}
+                        style={{cursor: 'pointer'}}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </Link>
+                </div>
                 <div className={css.buttonGroup}>
                     <IconButton aria-label='email' href='mailto: duab@bc.edu' style={{ color: 'white' }}>
                         <EmailIcon style={{ fontSize: 35 }} />
