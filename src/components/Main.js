@@ -25,7 +25,6 @@ function Main(props) {
             num_research = props.data.research.length;
             num_publication = props.data.publications.length;
             project_top = 369 + 35 * num_research + 'px';
-            console.log(project_top)
         }
     }, [props?.data?.research])
 

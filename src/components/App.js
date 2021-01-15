@@ -24,7 +24,6 @@ function App() {
 	return (
 		<div className={css.container}>
 		<Header />
-		{console.log(data)}
 		<Main data={data}/>
 		<footer style={{textAlign: 'center'}}><small>Copyright &copy; {year} Anran Du | Up-to-date {month} {year}</small></footer>
 		</div>

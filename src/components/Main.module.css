@@ -149,34 +149,38 @@ span a:hover {
         z-index: 10;
         width: 100%;
         text-align: center;
-        opacity: 95%;
+        opacity: 0.95;
+        font-size: 120%;
     }
 
     .publications {
         grid-row: auto;
         background-color: white;
-        top: 146px;
+        top: 138px;
         z-index: 10;
         text-align: center;
-        opacity: 95%;
+        opacity: 0.95;
+        font-size: 120%;
     }
 
     .research {
         grid-row: auto;
         background-color: white;
-        top: 182px;
+        top: 166px;
         z-index: 10;
         text-align: center;
-        opacity: 95%;
+        opacity: 0.95;
+        font-size: 120%;
     }
 
     .projects {
         grid-row: auto;
         background-color: white;
-        top: 218px;
+        top: 194px;
         z-index: 10;
         text-align: center;
-        opacity: 95%;
+        opacity: 0.95;
+        font-size: 120%;
     }
 
     .activeMain {
