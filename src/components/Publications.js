@@ -1,8 +1,6 @@
 import React from 'react';
 import css from './Publications.module.css'
-import Button from '@material-ui/core/Button';
-import { withStyles } from '@material-ui/core/styles';
-
+import Button from 'react-bootstrap/Button';
 
 function Publications(props) {
 
@@ -17,11 +15,11 @@ function Publications(props) {
                             <div><strong>Anran Du</strong>{d.authors}</div>
                             &nbsp;
                             <div>{d.conference_}</div>
-                            <Button variant="contained" href={d.paper} target="_blank" style={{marginTop: '15px'}}>
+                            <Button variant="outline-primary" href={d.paper} target="_blank" style={{marginTop: '15px'}}>
                                 Paper
                             </Button>
                             &nbsp; &nbsp; &nbsp;
-                            <Button variant="contained" href={d.video} target="_blank" style={{marginTop: '15px'}}>
+                            <Button variant="outline-primary" href={d.video} target="_blank" style={{marginTop: '15px'}}>
                                 Video
                             </Button>
                         </div>

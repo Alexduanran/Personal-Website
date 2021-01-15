@@ -5,7 +5,7 @@ import SwiperCore, { Pagination, Mousewheel, Navigation } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
-import Button from '@material-ui/core/Button';
+import Button from 'react-bootstrap/Button';
 import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
@@ -31,7 +31,7 @@ function Projects(props) {
                                 </p>
                                 {
                                     d.website ?
-                                    <Button variant="contained" href={d.website} target="_blank">
+                                    <Button variant="outline-primary" href={d.website} target="_blank">
                                         Website
                                     </Button>
                                     :
@@ -53,13 +53,13 @@ function Projects(props) {
                                         loop={true}
                                         navigation={true}
                                         style={d.vertical === 'true' ?
-                                        {minWidth: '34vw', width: '34vw', minHeight: '300px'} : {}}>
+                                        {minWidth: '150px', width: '12vw', minHeight: '320px'} : {}}>
                                     {
                                         d.images.map(im => (
                                             <SwiperSlide>
                                                 <img src={im} className={css.image} 
                                                 style={d.vertical === 'true' ?
-                                                {minWidth: '34vw', width: '34vw', minHeight: '300px'} : {}}/>
+                                                {minWidth: '150px', width: '12vw'} : {}}/>
                                             </SwiperSlide>
                                         ))
                                     }

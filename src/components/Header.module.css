@@ -117,4 +117,9 @@ ul li {
         width: 100%;
         margin-bottom: 5%;
     }
+
+    .container {
+        background-size: cover;
+        background-repeat: none;
+    }
 }

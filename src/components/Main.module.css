@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 
-.main a {
+span a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -120,6 +120,19 @@ span a:hover {
     }
     to {
         font-size: x-large;
+    }
+}
+
+@media only screen and (max-width: 1468px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .main {
+        width: 100%;
+        grid-template-columns: 25% 75%;
     }
 }
 

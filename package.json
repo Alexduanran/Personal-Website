@@ -23,7 +23,6 @@
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.1",
     "react-scroll-parallax": "^2.3.4",
-    "react-transition-group": "^1.2.1",
     "sass": "^1.30.0",
     "save-dev": "0.0.1-security",
     "swiper": "^6.4.5",

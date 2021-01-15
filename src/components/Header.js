@@ -21,12 +21,14 @@ function Header() {
     useEffect(() => {
         setHeight(window.innerHeight);
         window.addEventListener('scroll', handleScroll);
-        if (!vantaEffect) {
-            setVantaEffect(WAVES({
-                el: myRef.current,
-                THREE: THREE,
-                shininess: 40
-            }))
+        if (isDesktopOrLaptop) {
+            if (!vantaEffect) {
+                setVantaEffect(WAVES({
+                    el: myRef.current,
+                    THREE: THREE,
+                    shininess: 40
+                }))
+            };
         };
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -36,7 +38,7 @@ function Header() {
 
     const handleScroll = () => {
         let scrollTop = window.scrollY,
-            minHeight = isDesktopOrLaptop ? 0.15 * window.innerHeight : 110,
+            minHeight = isDesktopOrLaptop ? 145 : 110,
             logoHeight = Math.max(minHeight, window.innerHeight - scrollTop);
         setHeight(logoHeight);
     }
@@ -53,7 +55,7 @@ function Header() {
                         }}>
                     Anran Du
                 </div>
-                <ul className={css.navbar} style={{marginTop: (- 1 / window.innerHeight * 15000) * (1 - height / window.innerHeight)}}>
+                <ul className={css.navbar} >
                     <li>
                         <Link
                             to='about'
@@ -124,10 +126,11 @@ function Header() {
             </div>
         }
         {isMobile &&
-            <div ref={myRef} className={css.container} style={{height: height}}>
+            <div className={css.container} style={{height: height,
+                                                    backgroundImage: `url('${process.env.PUBLIC_URL}/media/MobileBackground.png')`}}>
             <div className={css.name} 
-                style={{fontSize: height * 0.09 + 35,
-                    marginTop: height * 0.20,
+                style={{fontSize: height * 0.08 + 30,
+                    marginTop: height * 0.23,
                     textAlign: 'center'
                     }}>
                 Anran Du
@@ -149,7 +152,7 @@ function Header() {
                         to='publications'
                         spy={true}
                         smooth={true}
-                        offset={-window.innerHeight*0.21}
+                        offset={-window.innerHeight*0.23}
                         duration={500}>
                         Publications
                     </Link>
@@ -159,7 +162,7 @@ function Header() {
                         to='research'
                         spy={true}
                         smooth={true}
-                        offset={-window.innerHeight*0.21}
+                        offset={-window.innerHeight*0.25}
                         duration={500}>
                         Research
                     </Link>
@@ -169,7 +172,7 @@ function Header() {
                         to='projects'
                         spy={true}
                         smooth={true}
-                        offset={-window.innerHeight*0.21}
+                        offset={-window.innerHeight*0.29}
                         duration={500}>
                         Projects
                     </Link>
