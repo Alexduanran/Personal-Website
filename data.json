@@ -5,10 +5,17 @@
     },
     "publications": [
         {
+            "title": "Enabling Pervasive Federated Learning using Vehicular Virtual Edge Servers",
+            "id": "percom",
+            "authors": ", Yicheng Shen, Lewis Tseng, Takamasa Higuchi, Seyhan Ucar, and Onur Altintas",
+            "conference": "PerCom 2021",
+            "conference_": "PerCom Work in Progress on Pervasive Computing and Communications 2021"
+        },
+        {
             "title": "Poster: CarML: Distributed Machine Learning in Vehicular Clouds",
             "id": "mobicom",
             "authors": ", Yicheng Shen, and Lewis Tseng",
-            "conference": "MobiCom",
+            "conference": "MobiCom 2020",
             "conference_": "MobiCom 2020: The 26th Annual International Conference on Mobile Computing and Networking, September 2020",
             "paper": "https://dl.acm.org/doi/10.1145/3372224.3418168",
             "video": "https://drive.google.com/file/d/1siEUlGPFtHG8_wp9YYFDCJrb4APrqfJp/view"
