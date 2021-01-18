@@ -5,23 +5,34 @@ import Button from 'react-bootstrap/Button';
 function Publications(props) {
 
     return (
-        <div id='publications' style={{marginBottom: '5%'}}>
+        <div id='publications' style={{marginBottom: '3%'}}>
             <div id='Conferences'>
                 {
                     props.data ? 
                     props.data.map(d => (
-                        <div id={d.id}>
+                        <div id={d.id} style={{marginBottom: '2%'}}>
                             <h3>{d.title}</h3>
                             <div><strong>Anran Du</strong>{d.authors}</div>
                             &nbsp;
                             <div>{d.conference_}</div>
-                            <Button variant="outline-primary" href={d.paper} target="_blank" style={{marginTop: '15px'}}>
-                                Paper
-                            </Button>
+                            {
+                                d.paper ?
+                                <Button variant="outline-primary" href={d.paper} target="_blank" style={{marginTop: '15px'}}>
+                                    Paper
+                                </Button>
+                                :
+                                <div/>
+                            }
                             &nbsp; &nbsp; &nbsp;
-                            <Button variant="outline-primary" href={d.video} target="_blank" style={{marginTop: '15px'}}>
-                                Video
-                            </Button>
+                            {
+                                d.video ?
+                                <Button variant="outline-primary" href={d.video} target="_blank" style={{marginTop: '15px'}}>
+                                    Video
+                                </Button>
+                                :
+                                <div/>
+                            }
+                            
                         </div>
                     ))
                     :

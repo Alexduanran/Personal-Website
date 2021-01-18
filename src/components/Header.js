@@ -81,7 +81,7 @@ function Header() {
                             to='research'
                             spy={true}
                             smooth={true}
-                            offset={-window.innerHeight*0.21}
+                            offset={-window.innerHeight*0.22}
                             duration={500}>
                             Research
                         </Link>
@@ -91,7 +91,7 @@ function Header() {
                             to='projects'
                             spy={true}
                             smooth={true}
-                            offset={-window.innerHeight*0.21}
+                            offset={-window.innerHeight*0.22}
                             duration={500}>
                             Projects
                         </Link>

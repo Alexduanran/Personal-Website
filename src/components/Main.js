@@ -13,20 +13,22 @@ function Main(props) {
     const [publicationsActive, setPublicationsActive] = useState(false);
     const [researchActive, setResearchActive] = useState(false);
     const [projectsActive, setProjectsActive] = useState(false);
-    var num_research = 0;
-    var num_publication = 0;
-    var project_top = 0;
+    // var num_research = 0;
+    // var num_publication = 0;
+    // var research_top = 0;
+    // var project_top = 0;
 
     const isDesktopOrLaptop = useMediaQuery({ minDeviceWidth: 768 });
     const isMobile = useMediaQuery({ maxDeviceWidth: 768 })
 
-    useEffect(() => {
-        if (props.data.research) {
-            num_research = props.data.research.length;
-            num_publication = props.data.publications.length;
-            project_top = 369 + 35 * num_research + 'px';
-        }
-    }, [props?.data?.research])
+    // useEffect(() => {
+    //     if (props.data.research) {
+    //         num_research = props.data.research.length;
+    //         num_publication = props.data.publications.length;
+    //         research_top = 341 + 35 * num_publication;
+    //         project_top = 369 + 35 * num_research;
+    //     }
+    // }, [props?.data?.research])
 
     return (
         <div>
@@ -84,7 +86,7 @@ function Main(props) {
                     </span>
                     <Publications data={props.data.publications}/>
 
-                    <span className={css.research} style={{top: publicationsActive ? 341 : 306}}>
+                    <span className={css.research} style={{top: publicationsActive ? 376 : 306}}>
                         <Link 
                             className={researchActive ? css.activeMain : css.inactive}
                             to='research'
@@ -107,7 +109,7 @@ function Main(props) {
                                                 to={d.id}
                                                 spy={true}
                                                 smooth={true}
-                                                offset={-window.innerHeight*0.21}
+                                                offset={-window.innerHeight*0.22}
                                                 duration={500}>
                                                 {d.title}
                                             </Link>
@@ -127,7 +129,7 @@ function Main(props) {
                             to='projects'
                             spy={true}
                             smooth={true}
-                            offset={-window.innerHeight*0.21}
+                            offset={-window.innerHeight*0.22}
                             duration={500}
                             onSetActive={()=>setProjectsActive(true)}
                             onSetInactive={()=>setProjectsActive(false)}>
