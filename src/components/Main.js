@@ -86,7 +86,7 @@ function Main(props) {
                     </span>
                     <Publications data={props.data.publications}/>
 
-                    <span className={css.research} style={{top: publicationsActive ? 376 : 306}}>
+                    <span className={css.research} style={{top: publicationsActive ? 416 : 306}}>
                         <Link 
                             className={researchActive ? css.activeMain : css.inactive}
                             to='research'

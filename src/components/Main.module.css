@@ -19,6 +19,10 @@ span a {
 	    black 50%);
     background-size: 200% 100%;
     background-position: 100%;
+    -webkit-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    -o-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
     transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
 }
 
@@ -27,6 +31,10 @@ span a {
 }
 
 span a:hover {
+    -webkit-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+    -o-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
     transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
     background-position: 0%;
 }

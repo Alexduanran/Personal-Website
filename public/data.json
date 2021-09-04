@@ -1,15 +1,25 @@
 {
     "about": {
         "photo": "./media/profile_photo.JPG",
-        "description": "My name is Anran, but I also go by Alex. I am a student at Boston College, Class of 2021, majoring in Computer Science. My research focuses on the application of machine learning and distributed computing."
+        "description": "My name is Anran, and I am a first year master's student at Carnegie Mellon University, with a concentration in mobile and pervasive computing."
     },
     "publications": [
+        {
+            "title": "CRACAU: Byzantine Machine Learning meets Industrial Edge Computing in Industry 5.0",
+            "id": "tii",
+            "authors": ", Yicheng Shen, Qinzi Zhang, Lewis Tseng, Moayad Aloqaily",
+            "conference": "IEEE TII",
+            "conference_": "IEEE Transactions on Industrial Informatics",
+            "paper": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424"
+        },
         {
             "title": "Enabling Pervasive Federated Learning using Vehicular Virtual Edge Servers",
             "id": "percom",
             "authors": ", Yicheng Shen, Lewis Tseng, Takamasa Higuchi, Seyhan Ucar, and Onur Altintas",
             "conference": "PerCom 2021",
-            "conference_": "PerCom Work in Progress on Pervasive Computing and Communications 2021"
+            "conference_": "PerCom Work in Progress on Pervasive Computing and Communications 2021",
+            "paper": "https://ieeexplore.ieee.org/document/9430863",
+            "video": "https://drive.google.com/file/d/18ZV8ep_cg8Lst1znqwrgTI3KWk8lYiqT/view"
         },
         {
             "title": "Poster: CarML: Distributed Machine Learning in Vehicular Clouds",
@@ -25,7 +35,7 @@
         {
             "title": "VC-SGD",
             "id": "vcsgd",
-            "time": "Nov 2020 - Present",
+            "time": "Nov 2020 - Aug 2021",
             "descriptions": [
                 "The novel system, VC - SGD (Vehicular Clouds - Stochastic Gradient Descent) seamlessly integrates the emerging concept of vehicular clouds with an edge-based FL (Federated Learning)."
             ],
@@ -34,7 +44,7 @@
         {
             "title": "CRACAU",
             "id": "cracau",
-            "time": "Sep 2020 - Present",
+            "time": "Sep 2020 - Aug 2021",
             "descriptions": [
                 "A novel, Byzantine-tolerant federated learning algorithm designed for the popular three-level edge computing architecture."
                 

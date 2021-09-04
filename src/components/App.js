@@ -23,9 +23,9 @@ function App() {
 	
 	return (
 		<div className={css.container}>
-		<Header />
-		<Main data={data}/>
-		<footer style={{textAlign: 'center'}}><small>Copyright &copy; {year} Anran Du | Up-to-date {month} {year}</small></footer>
+			<Header />
+			<Main data={data}/>
+			<footer style={{textAlign: 'center'}}><small>Copyright &copy; {year} Anran Du | Up-to-date {month} {year}</small></footer>
 		</div>
 	);
 	}
